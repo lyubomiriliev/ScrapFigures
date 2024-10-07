@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   // Function to scroll to the section smoothly
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     if (sectionId === 'home') {
       // Scroll to top of the page
       window.scrollTo({ top: 0, behavior: 'smooth' });
