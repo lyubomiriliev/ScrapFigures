@@ -12,8 +12,8 @@ export const BANNERS = [
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [touchStart, setTouchStart] = useState(null);
-  const [touchEnd, setTouchEnd] = useState(null);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
   // Handle moving to the next slide
   const nextSlide = () => {
@@ -35,11 +35,11 @@ const HeroSection = () => {
   }, [currentSlide]);
 
   // Handle touch events for swipe detection
-  const handleTouchStart = (e: any) => {
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     setTouchStart(e.targetTouches[0].clientX);
   };
 
-  const handleTouchMove = (e: any) => {
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
     setTouchEnd(e.targetTouches[0].clientX);
   };
 
