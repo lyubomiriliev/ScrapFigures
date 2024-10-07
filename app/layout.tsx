@@ -5,8 +5,8 @@ import Header from "@/components/Header";
 
 
 export const metadata: Metadata = {
-  title: "SalvagedParts",
-  description: "Unique figures by scrap parts",
+  title: "Scrap Figures",
+  description: "Sculptures Built with Passion and Precision",
 };
 
 export default function RootLayout({

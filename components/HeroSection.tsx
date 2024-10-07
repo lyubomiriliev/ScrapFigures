@@ -35,11 +35,11 @@ const HeroSection = () => {
   }, [currentSlide]);
 
   // Handle touch events for swipe detection
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: any) => {
     setTouchStart(e.targetTouches[0].clientX);
   };
 
-  const handleTouchMove = (e) => {
+  const handleTouchMove = (e: any) => {
     setTouchEnd(e.targetTouches[0].clientX);
   };
 
@@ -59,6 +59,14 @@ const HeroSection = () => {
     // Reset touch positions
     setTouchStart(null);
     setTouchEnd(null);
+  };
+
+  // Function to scroll to the gallery section
+  const scrollToGallery = () => {
+    const gallerySection = document.getElementById('gallery');
+    if (gallerySection) {
+      gallerySection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -98,7 +106,10 @@ const HeroSection = () => {
           <span className="text-white text-lg md:text-2xl font-vintage uppercase drop-shadow-lg">
             Innovative Sculptures Built with Passion and Precision
           </span>
-          <button className="text-white mt-8 md:mt-20 border-white border-[2px] px-4 py-2 md:px-6 md:py-3 hover:bg-white hover:text-black font-vintage text-lg md:text-xl drop-shadow-lg">
+          <button 
+            onClick={scrollToGallery} 
+            className="text-white mt-8 md:mt-20 border-white border-[2px] px-4 py-2 md:px-6 md:py-3 hover:bg-white hover:text-black font-vintage text-lg md:text-xl drop-shadow-lg"
+          >
             EXPLORE NOW
           </button>
         </div>
