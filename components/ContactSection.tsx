@@ -3,7 +3,7 @@ const ContactSection = () => {
       <section className="w-full  flex flex-col justify-center items-center py01 px-4">
         <div className="w-full max-w-screen-md bg-salvagedMetal p-8 rounded-md shadow-lg">
             <div>
-                <h1 className="py-10 font-vintage text-xl text-center">Have questions about our sculptures or custom orders? We'd love to hear from you! Reach out to us for more information about our art pieces, the creation process, or to discuss a bespoke project. Let's turn scrap into something remarkable together.</h1>
+                <h1 className="py-10 font-vintage text-xl text-center">Have questions about our sculptures or custom orders? We would love to hear from you! Reach out to us for more information about our art pieces, the creation process, or to discuss a bespoke project. Lets turn scrap into something remarkable together.</h1>
             </div>
           <h1 className="text-3xl font-bold text-modernWhite mb-8 text-center">Get in Touch</h1>
           <form className="space-y-6">
