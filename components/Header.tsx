@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-darkBrown p-4 shadow-lg fixed w-full top-0 z-50">
+    <header className="bg-darkBrown p-2 md:p-0 shadow-lg fixed w-full top-0 z-50">
       <div className="container max-w-screen-xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Image src="/scrapFiguresLogo.svg" alt='Logo' width={150} height={60} className='w-34 md:w-60' />
